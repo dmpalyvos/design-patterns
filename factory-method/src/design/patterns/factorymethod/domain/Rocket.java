@@ -1,5 +1,8 @@
 package design.patterns.factorymethod.domain;
 
+/**
+ * A slow spaceship engine for slow spaceships.
+ */
 public class Rocket implements Engine {
 
 	@Override

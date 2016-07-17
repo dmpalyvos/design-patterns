@@ -3,10 +3,11 @@ package design.patterns.factorymethod;
 import design.patterns.factorymethod.domain.Engine;
 
 public abstract class Spaceship {
-	
-	
-	/*
-	 * This is a template method from which a factory method is usually called.
+
+	/**
+	 * Template method used by subclasses to show the factory method in action.
+	 * Note that the factory method pattern is frequently used along the
+	 * template method pattern.
 	 */
 	public void launch() {
 		System.out.println("[*] Preparing for launch.");
@@ -16,10 +17,13 @@ public abstract class Spaceship {
 		System.out.println("[*] Launch successful.");
 	}
 
-	/*
-	 * This is the factory method.
-	 * It will create an appropriate object based on the subclass of the ship.
+	/**
+	 * Factory method. Each subclass overrides this method and instantiates the
+	 * appropriate object. In this example, the Engine created by the factory
+	 * method is for internal use by the object. However, factory methods can
+	 * also generate objects to be used by others. For example abstract
+	 * factories are usually implemented using factory methods.
 	 */
-	public abstract Engine createEngine();
+	protected abstract Engine createEngine();
 
 }
