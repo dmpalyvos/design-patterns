@@ -1,0 +1,3 @@
+> Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+
+In this example, we have various loggers which are responsible for responding to messages which have different severity levels. The client does not need to know which of the loggers will handle the request. He just places the request at the start of the chain and hopes that some class will be able to process it.
