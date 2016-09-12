@@ -1,0 +1,3 @@
+> The Command pattern decouples the object that invokes the operation from the one having the knowledge to perform it.  Commands are an object-oriented replacement for callbacks.
+
+In this example, we have a remote control with a single programmable main button and an undo button. We use the command pattern to change the functionality of the main button. The same pattern allows us to implement the undo button. 
