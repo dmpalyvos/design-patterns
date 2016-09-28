@@ -1,0 +1,1 @@
+An iterator decouples the traversal logic from the container.
