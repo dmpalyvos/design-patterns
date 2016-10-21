@@ -14,9 +14,11 @@ Facade (185), Mediator (273), Observer (293)
 See GoF 38
 
 # **Creational Patterns**
+
 ## Abstract Factory
 > Provide an interface for creating families of related or dependent objects without specifying their
 concrete classes.
+
 ```java
 public interface Button {
     void click();
@@ -50,12 +52,14 @@ public class LinuxFactory implements AbstractFactory {
 ```
 
 ## Builder
+
 > Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
 **The telescoping constructor anti-pattern** occurs when the increase of object constructor parameter combination leads to an exponential list of constructors. Instead of using numerous constructors, the builder pattern uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once.
 
 ## Factory Method
 > Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
 ```java
 public abstract class BaseHandler {
     public void handle() {
@@ -111,8 +115,7 @@ There are 2 ways to parameterize a system by the classes of objects it creates.
 
 ## Adapter
 
-> Convert the interface of a class into another interface clients expect. Adapter lets classes work together that
-couldn't otherwise because of incompatible interfaces.
+> Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
 ```java
 public interface Adaptee {
